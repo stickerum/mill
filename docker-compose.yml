@@ -3,9 +3,9 @@ services:
   node:
     build: .
     ports:
-      - 3000:3000
+      - '3000:3000'
     volumes:
-      - ./app:/stickerum
+      - './app:/stickerum'
       - /stickerum/node_modules
     links:
       - mongo
@@ -13,13 +13,11 @@ services:
     depends_on:
       - mongo
       - redis
-
   mongo:
-    image: mongo:latest
+    image: 'mongo:latest'
     ports:
-      - 27017:27017
-
+      - '27017:27017'
   redis:
-    image: redis:latest
+    image: 'redis:latest'
     ports:
-      - 6379:6379
+      - '6379:6379'
