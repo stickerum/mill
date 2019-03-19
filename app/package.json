@@ -1,15 +1,45 @@
 {
-  "name": "app",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "mill",
+  "description": "The main tool that runs Stickerum",
+  "license": "GPL-3.0",
+  "homepage": "https://stickerum.ru",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "start:dev": "nodemon index.js",
+    "build": "webpack --mode production",
+    "build:dev": "webpack --mode development --watch",
+    "grap-instagram-media": "node ./bin/load-instagram-photos.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "express": "^4.16.3"
+    "cookie-parser": "^1.4.4",
+    "express": "^4.16.3",
+    "twig": "^1.13.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "@codexteam/deeplinker": "^1.1.1",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.1",
+    "cssnano": "^4.1.10",
+    "dotenv": "^7.0.0",
+    "eslint": "^5.15.3",
+    "eslint-config-codex": "github:codex-team/eslint-config",
+    "eslint-loader": "^2.1.2",
+    "hawk.javascript": "^2.0.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "nodemon": "^1.18.10",
+    "normalize.css": "^8.0.1",
+    "postcss-apply": "^0.12.0",
+    "postcss-font-magician": "^2.2.1",
+    "postcss-import": "^12.0.1",
+    "postcss-inline-svg": "^3.1.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-nested": "^4.1.2",
+    "postcss-preset-env": "^6.6.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
   }
 }

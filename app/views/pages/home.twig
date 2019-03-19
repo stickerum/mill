@@ -1,0 +1,40 @@
+{% extends 'layout.twig' %}
+
+{% block body %}
+    <div class="screen screen--centered screen--stretched">
+        <div class="logo"></div>
+        <div class="name">
+            Stickerum
+        </div>
+        <div class="lead">
+            Напечатаю и вырежу на листе А5 твой набор из 12 стикеров.<br>
+            Бесплатная доставка по всему миру.<br>
+            Закажи себе и друзьям.
+        </div>
+        <a class="button button--telegram deeplinker" href="https://t.me/stickerumbot" data-app-link="tg://resolve?domain=stickerumbot">
+            stickerumbot
+        </a>
+        <div class="links">
+            <a class="deeplinker" href="https://t.me/stickerumspb" data-app-link="tg://resolve?domain=stickerumspb">
+                Новости
+            </a>
+            <a href="/faq">
+                Помощь
+            </a>
+        </div>
+    </div>
+
+    <div class="screen">
+        <div id="instagram-grid" class="instagram-grid__wrapper"></div>
+
+        <div class="instagram-footer">
+            <span class="instagram-footer__greeting">
+                Подписывайся на нас в Instagram
+            </span>
+
+            <a class="button button--instagram deeplinker" href="https://www.instagram.com/stickerum/" data-app-link="instagram://user?username=stickerum">
+                stickerum
+            </a>
+        </div>
+    </div>
+{% endblock %}

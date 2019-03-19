@@ -1,8 +1,7 @@
 FROM node:alpine
 
-COPY app /stickerum
 WORKDIR /stickerum
 
-RUN npm install --verbose
+RUN yarn install
 
-CMD npm run start
+CMD yarn start
