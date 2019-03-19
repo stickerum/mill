@@ -4,7 +4,7 @@ module.exports = {
   /**
    * App web port
    */
-  PORT: 3000,
+  PORT: 3003,
 
   /**
    * Path to parent for 'public' dir with static files
