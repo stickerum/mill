@@ -13,6 +13,7 @@
   "dependencies": {
     "cookie-parser": "^1.4.4",
     "express": "^4.16.3",
+    "http-errors": "^1.7.2",
     "twig": "^1.13.2"
   },
   "devDependencies": {
@@ -30,7 +31,6 @@
     "mini-css-extract-plugin": "^0.5.0",
     "nodemon": "^1.18.10",
     "normalize.css": "^8.0.1",
-    "postcss-apply": "^0.12.0",
     "postcss-font-magician": "^2.2.1",
     "postcss-import": "^12.0.1",
     "postcss-inline-svg": "^3.1.1",

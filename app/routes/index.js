@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
 
-/** GET home page. */
+/** GET index page. */
 router.get('/', function (req, res, next) {
-  res.render('pages/home');
+  res.render('pages/index');
 });
 
 /** GET faq page. */

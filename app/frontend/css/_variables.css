@@ -1,4 +1,6 @@
 /**
  * CSS variables
  */
-:root {}
+:root {
+    --grayText: gray;
+}
