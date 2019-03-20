@@ -35,7 +35,7 @@ app.use(express.static(global.config.STATIC_FILES_DIR, {
   /**
    * Cache time in ms
    */
-  maxage: time.DAY * 1000
+  maxage: time.WEEK * 1000
 }));
 
 /**
