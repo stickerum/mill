@@ -31,10 +31,27 @@ plugins:
     features:
       # Disable polyfilling double-position gradients in CSS
       # https://cssdb.org/#double-position-gradients
+      # https://github.com/jonathantneal/postcss-double-position-gradients
       #
       # Solves problems with radial-gradient
       # https://github.com/csstools/postcss-preset-env/issues/120
       double-position-gradients: false
+
+      # Custom values
+      # https://cssdb.org/#custom-properties
+      # https://github.com/postcss/postcss-custom-properties
+      custom-properties:
+        # Where Custom Properties can be imported from
+        # https://github.com/postcss/postcss-custom-properties#importfrom
+        importFrom: './frontend/css/_variables.css'
+
+      # Aliases that represent media queries
+      # https://cssdb.org/#custom-media-queries
+      # https://github.com/postcss/postcss-custom-media
+      custom-media-queries:
+        # Where custom media can be imported from
+        # https://github.com/postcss/postcss-custom-media#importfrom
+        importFrom: './frontend/css/_media-queries.css'
 
   # Nested rules unwrapper
   # https://github.com/postcss/postcss-nested

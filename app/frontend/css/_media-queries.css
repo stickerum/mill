@@ -3,8 +3,3 @@
  */
 @custom-media --mobile all and (width <= 980px);
 @custom-media --desktop all and (width >= 981px);
-
-/**
- * CSS variables
- */
-:root {}

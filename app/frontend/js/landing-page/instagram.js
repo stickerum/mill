@@ -1,7 +1,7 @@
 /**
  * Load JSON data with medias
  */
-const instagramData = require('../data/instagram-photos.json');
+const instagramData = require('../../data/instagram-photos.json');
 
 /**
  * Return integer from 0 to target number
@@ -68,7 +68,7 @@ module.exports = (() => {
         photoWrapper.style.backgroundSize = 'cover';
 
         /**
-         * Generate random background color for tile while image not loaded
+         * Generate random background color for a tile while image not loaded
          */
         photoWrapper.style['background-color'] = generateColor();
 
