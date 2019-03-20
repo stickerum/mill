@@ -2,6 +2,6 @@ FROM node:alpine
 
 WORKDIR /stickerum
 
-RUN yarn install
+RUN yarn
 
 CMD yarn start

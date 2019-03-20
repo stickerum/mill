@@ -47,7 +47,7 @@ const getMedia = () => {
     uri: 'https://api.instagram.com/v1/users/self/media/recent/',
     qs: {
       access_token: ACCESS_TOKEN,
-      count: 9
+      count: 12
     },
     json: true
   });

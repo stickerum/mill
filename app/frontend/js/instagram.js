@@ -22,7 +22,7 @@ const rand = (number) => {
  * @return {string}
  */
 const generateColor = (alpha = 0.25) => {
-  return `rgba(${rand(256)}, ${rand(256)}, ${rand(256)}, ${alpha}})`;
+  return `rgba(${rand(256)}, ${rand(256)}, ${rand(256)}, ${alpha})`;
 };
 
 /**
@@ -42,8 +42,7 @@ module.exports = (() => {
         /**
          * Get data for an image
          */
-        const
-            link = item.link;
+        const link = item.link;
         const src = item.imageUrl;
 
         /**
