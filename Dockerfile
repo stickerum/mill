@@ -4,4 +4,4 @@ WORKDIR /stickerum
 
 RUN yarn
 
-CMD yarn start
+CMD yarn start:dev
