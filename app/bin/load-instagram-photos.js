@@ -27,7 +27,7 @@ require('dotenv').config();
  *
  *    Here is your access token.
  */
-const ACCESS_TOKEN = process.env.ACCESS_TOKEN;
+const INSTAGRAM_ACCESS_TOKEN = process.env.INSTAGRAM_ACCESS_TOKEN;
 
 /**
  * Save processed data to this file
@@ -46,7 +46,7 @@ const getMedia = () => {
   return rp({
     uri: 'https://api.instagram.com/v1/users/self/media/recent/',
     qs: {
-      access_token: ACCESS_TOKEN,
+      access_token: INSTAGRAM_ACCESS_TOKEN,
       count: 12
     },
     json: true

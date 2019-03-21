@@ -1,5 +1,6 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const FixStyleOnlyEntriesPlugin = require("webpack-fix-style-only-entries");
+const Dotenv = require('dotenv-webpack');
 const path = require('path');
 
 const sourceDir = path.resolve(__dirname, 'frontend');
@@ -56,7 +57,7 @@ module.exports = {
      * Depends on the value of the libraryTarget (default 'var')
      * https://webpack.js.org/configuration/output#outputlibrary
      */
-    library: '[name]'
+    // library: '[name]'
   },
 
   /**
@@ -122,6 +123,12 @@ module.exports = {
    * https://webpack.js.org/configuration/plugins
    */
   plugins: [
+    /**
+     * Supports dotenv environment variables
+     * https://github.com/mrsteele/dotenv-webpack
+     */
+    new Dotenv(),
+
     /**
      * Remove empty js files created by webpack for CSS entries
      * https://github.com/fqborges/webpack-fix-style-only-entries

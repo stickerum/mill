@@ -24,6 +24,7 @@
     "css-loader": "^2.1.1",
     "cssnano": "^4.1.10",
     "dotenv": "^7.0.0",
+    "dotenv-webpack": "^1.7.0",
     "eslint": "^5.15.3",
     "eslint-config-codex": "github:codex-team/eslint-config",
     "eslint-loader": "^2.1.2",

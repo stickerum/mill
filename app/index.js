@@ -42,6 +42,17 @@ app.use(express.static(global.config.STATIC_FILES_DIR, {
 /** @todo add request logger middleware */
 
 /**
+ * Set global vars for Twig tempates
+ */
+app.use(function (req, res, next) {
+  res.locals = {
+    HOSTNAME: `${req.protocol}://${req.get('host')}`,
+    TITLE: 'Stickerum'
+  };
+  next();
+});
+
+/**
  * Use list of routes
  */
 app.use('/', routes);
