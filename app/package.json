@@ -31,7 +31,6 @@
     "hawk.javascript": "^2.0.0",
     "mini-css-extract-plugin": "^0.5.0",
     "nodemon": "^1.18.10",
-    "normalize.css": "^8.0.1",
     "postcss-font-magician": "^2.2.1",
     "postcss-import": "^12.0.1",
     "postcss-inline-svg": "^3.1.1",
@@ -40,6 +39,7 @@
     "postcss-preset-env": "^6.6.0",
     "request": "^2.88.0",
     "request-promise": "^4.2.4",
+    "sanitize.css": "^8.0.0",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0",
     "webpack-fix-style-only-entries": "^0.2.1"

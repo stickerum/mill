@@ -22,8 +22,4 @@ module.exports = (() => {
 
         return `${filename}?v=${stats.mtimeMs}`;
     });
-
-    twig.extendFunction('getHostname', (...args) => {
-        // console.log('args:', ...args);
-    });
 })();
