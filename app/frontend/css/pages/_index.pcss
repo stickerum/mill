@@ -1,0 +1,23 @@
+.error-block {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    &__logo {
+        margin: 0 auto;
+        width: 7em;
+        height: 7em;
+        background-image: svg-load('../../svg/stickerum-logo.svg', fill: var(--grayText));
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: block;
+    }
+
+    &__text {
+        margin-top: 1em;
+        text-align: center;
+        font-size: 2em;
+        color: var(--grayText);
+    }
+}

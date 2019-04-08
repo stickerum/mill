@@ -1,0 +1,11 @@
+{% extends 'layout.twig' %}
+
+{% block body %}
+    <div class="error-block">
+        <a class="error-block__logo" href="/"></a>
+
+        <div class="error-block__text">
+            {{ message ?: "Internal Server Error" }}
+        </div>
+    </div>
+{% endblock %}

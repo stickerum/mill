@@ -1,0 +1,223 @@
+/**
+ * Legacy code
+ */
+body {
+    margin: 0;
+    font-size: 1em;
+    font-family: system-ui;
+    line-height: 1.54em;
+}
+
+a {
+    color: #7B7979;
+    text-decoration: underline;
+
+    &:hover {
+        color: #595858;
+        cursor: pointer;
+    }
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 500px;
+    width: 100%;
+
+    &--centered {
+        align-items: center;
+    }
+
+    &--stretched {
+        height: 100%;
+    }
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    margin: 10px;
+    padding: 0.65em 1.10em;
+    border-radius: 36px;
+    background: #4161d0;
+    color: #fff !important;
+    letter-spacing: 0.4;
+    font-size: 1.25em;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+
+    a& {
+        text-decoration: none;
+    }
+
+    &::before {
+        background-size: contain;
+        background-repeat: no-repeat;
+        content: '';
+    }
+
+    &--telegram {
+        background: #2aa2d5;
+
+        &::before {
+            margin-right: 15px;
+            width: 34px;
+            height: 28px;
+            background-image: svg-load(../../svg/telegram-logo.svg);
+        }
+    }
+
+    &--instagram {
+        background: radial-gradient(farthest-corner at 40px 70px, #FEE081 0%, #F87825 24%, #DB2B75 49%, #A32B98 66%, #4B62D6 100%);
+
+        &::before {
+            margin-right: 15px;
+            width: 28px;
+            height: 28px;
+            background-image: svg-load(../../svg/instagram-logo.svg);
+        }
+    }
+}
+
+.logo {
+    margin: 0 auto;
+    margin-top: auto;
+    width: 7em;
+    height: 7em;
+    background-image: svg-load(../../svg/stickerum-logo.svg, fill: red);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.name {
+    margin-top: 0.7em;
+    margin-bottom: 0.8em;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.lead {
+    margin-bottom: 1em;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.links {
+    display: inline-flex;
+    justify-content: space-between;
+    margin-top: auto;
+    margin-bottom: 25px;
+    max-width: 240px;
+    width: 100%;
+}
+
+.instagram-grid__wrapper {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 600px;
+    width: 100%;
+}
+
+.instagram-grid__photo {
+    display: inline-block;
+    flex: 0 0 33.3333%;
+    max-height: 200px;
+    height: 33.3333vw;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.instagram-footer {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 35px 15px;
+
+    @media (--mobile) {
+        flex-direction: column;
+    }
+
+    &__greeting {
+         margin-right: 15px;
+
+        @media (--mobile) {
+            margin-right: 0;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+/**
+ * Help page
+ */
+.help-page-wrapper {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 750px;
+
+    & a {
+        color: #757373;
+
+        &:hover {
+            color: #363535;
+        }
+    }
+
+    & h1 {
+        font-size: 24px;
+    }
+
+    & h2 {
+        margin-top: 1em;
+        margin-bottom: -0.3em;
+        letter-spacing: 0;
+        font-size: 20px;
+        line-height: 1.6em;
+    }
+
+    & p {
+        font-size: 16px;
+        line-height: 1.8em;
+    }
+
+    & .logo {
+        margin: 50px auto;
+    }
+}
+
+.help-image {
+    margin: 25px 0;
+
+    & img {
+        display: block;
+        margin: auto;
+        max-width: 100%;
+    }
+
+    &__description {
+        display: block;
+        margin-top: 10px;
+        color: #888;
+        text-align: center;
+    }
+}
+
+.author {
+    color: #ababab;
+
+    & a {
+        color: inherit;
+        text-decoration: none;
+    }
+}
+
+.command {
+    color: rgb(19, 141, 255);
+}

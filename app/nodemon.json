@@ -1,0 +1,10 @@
+{
+  "ignore": [
+    "node_modules",
+    "public"
+  ],
+  "events": {
+    "restart": "echo \"App restarted due to: '$FILENAME'\""
+  },
+  "ext": "js,twig"
+}
