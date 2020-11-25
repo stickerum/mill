@@ -79,12 +79,12 @@ module.exports = {
               presets: [ '@babel/preset-env' ],
             },
           },
-          {
-            loader: 'eslint-loader',
-            options: {
-              fix: true,
-            },
-          },
+          // {
+          //   loader: 'eslint-loader',
+          //   options: {
+          //     fix: true,
+          //   },
+          // },
         ]
       },
 

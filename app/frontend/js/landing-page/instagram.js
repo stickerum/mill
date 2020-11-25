@@ -8,7 +8,7 @@ const instagramData = require('../../data/instagram-photos.json');
  *
  * @param {integer} number
  *
- * @return {integer}
+ * @returns {integer}
  */
 const rand = (number) => {
   return Math.floor(Math.random() * number);
@@ -19,7 +19,7 @@ const rand = (number) => {
  *
  * @param {integer} alpha
  *
- * @return {string}
+ * @returns {string}
  */
 const generateColor = (alpha = 0.25) => {
   return `rgba(${rand(256)}, ${rand(256)}, ${rand(256)}, ${alpha})`;
@@ -35,7 +35,7 @@ module.exports = (() => {
    * @param {string} wrapperId
    */
   const init = (wrapperId = 'instagram-grid') => {
-    let instagramPhotoBlock = document.getElementById(wrapperId);
+    const instagramPhotoBlock = document.getElementById(wrapperId);
 
     if (instagramPhotoBlock) {
       instagramData.data.forEach(item => {
@@ -48,7 +48,7 @@ module.exports = (() => {
         /**
          * Create image-link element
          */
-        let photoWrapper = document.createElement('a');
+        const photoWrapper = document.createElement('a');
 
         /**
          * Add style class
@@ -81,6 +81,6 @@ module.exports = (() => {
   };
 
   return {
-    init
+    init,
   };
 })();

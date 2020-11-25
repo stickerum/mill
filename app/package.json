@@ -8,7 +8,7 @@
     "start:dev": "nodemon index.js",
     "build": "webpack --mode production",
     "build:dev": "webpack --mode development --watch",
-    "grap-instagram-media": "node ./bin/load-instagram-photos.js"
+    "grap-instagram-media": "node ./bin/instagram.js"
   },
   "dependencies": {
     "cookie-parser": "^1.4.4",
@@ -17,18 +17,19 @@
     "twig": "^1.14.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.8.3",
-    "@babel/preset-env": "^7.8.3",
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.12.7",
     "@codexteam/deeplinker": "^1.1.1",
-    "babel-loader": "^8.0.6",
+    "babel-loader": "^8.2.1",
     "css-loader": "^3.4.2",
     "cssnano": "^4.1.10",
     "dotenv": "^8.2.0",
     "dotenv-webpack": "^1.7.0",
-    "eslint": "^6.8.0",
-    "eslint-config-codex": "github:codex-team/eslint-config",
+    "eslint": "^7.14.0",
+    "eslint-config-codex": "^1.4.0",
     "eslint-loader": "^3.0.3",
     "hawk.javascript": "^2.0.0",
+    "instagram-web-api": "^2.2.2",
     "mini-css-extract-plugin": "^0.9.0",
     "nodemon": "^2.0.2",
     "postcss-font-magician": "^2.3.1",

@@ -2,7 +2,7 @@ module.exports = (() => {
   /**
    * Document ready function wrapper
    *
-   * @param {function} f
+   * @param {Function} f
    */
   const docReady = (f) => {
     return /in/.test(document.readyState) ? window.setTimeout(docReady, 9, f) : f();
